@@ -1,0 +1,22 @@
+{
+  "name": "event-randomizer",
+  "version": "1.0.0",
+  "description": "Produces a buffer of Int32 based on events firing in the browser window.",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp"
+  },
+  "keywords": [
+    "event",
+    "crypto",
+    "random",
+    "randomizer"
+  ],
+  "author": "Michael DiCarlo",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}

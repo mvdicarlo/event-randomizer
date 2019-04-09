@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Event Randomizer Demo</title>
+  <script src="./dist/event-randomizer.min.js"></script>
+</head>
+<body>
+  <div>
+    <p>Drag the mouse around or type into the input.</p>
+    <p id="out"></p>
+    <input type="text">
+  </div>
+</body>
+<script>
+  EventRandomizer.onUpdate = (buf) => {
+    var p = document.getElementById("out");
+    p.innerHTML = buf.join(' ');
+  }
+  EventRandomizer.start(128);
+</script>
+</html>
